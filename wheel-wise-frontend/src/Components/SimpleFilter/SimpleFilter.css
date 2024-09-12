@@ -1,0 +1,79 @@
+#simple-filter-wrapper{
+    background-color: #ecf7ff;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#simple-filter-content{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#simple-filter-form{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.simple-filter-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.simple-filter-label > select {
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid grey;
+    transition: border-bottom-color 0.7s ease;
+    padding: 5px;
+}
+
+.simple-filter-label > select:hover {
+    border-bottom: 2px solid #FFC470;
+}
+
+.simple-filter-label > select:focus {
+    border-bottom: 2px solid #DD5746;
+}
+
+.simple-filter-items{
+    flex: 1 1 200px;
+}
+
+.simple-filter-label:disabled {
+    opacity: 0.1;
+}
+
+#select-disabled{
+    opacity: 0.5;
+}
+
+#select-disabled:hover{
+    border-bottom: 2px solid grey;
+}
+
+.simple-filter-items span,
+#price-range-label{
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.form-submit-btn{
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #DD5746;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.7s ease-in-out;
+}
+
+.form-submit-btn:hover{
+    background-color: #8B322C;
+}
